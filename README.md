@@ -1,3 +1,3 @@
 # Community-eSwap
 
-<img src="eswap.gif.JPG" height="300px" width="400px">
+<img src="eswap.gif" height="300px" width="400px">
