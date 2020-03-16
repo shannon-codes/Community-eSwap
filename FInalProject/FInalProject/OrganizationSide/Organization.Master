@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Organization.master.cs" Inherits="FInalProject.Organization" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Community e-Swap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+.grdContent
+        {
+            width: 80%;
+            border: solid 2px black;
+            min-width: 80%;
+        }
+        .header
+        {
+            background-color: #646464;
+            font-family: Arial;
+            color: White;
+            border: none 0px transparent;
+            height: 25px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .rows
+        {
+            background-color: #fff;
+            font-family: Arial;
+            font-size: 14px;
+            color: #000;
+            min-height: 25px;
+            text-align: left;
+            border: none 0px transparent;
+        }
+        .rows:hover
+        {
+            background-color: #ff8000;
+            font-family: Arial;
+            color: #fff;
+            text-align: left;
+        }
+        .selectedrow
+        {
+            background-color: #ff8000;
+            font-family: Arial;
+            color: #fff;
+            font-weight: bold;
+            text-align: left;
+        }
+        .mydatagrid a /** FOR THE PAGING ICONS  **/
+         {
+            background-color: Transparent;
+            padding: 5px 5px 5px 5px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .mygrdContent a:hover /** FOR THE PAGING ICONS  HOVER STYLES**/
+        {
+            background-color: #000;
+            color: #fff;
+        }
+        .mygrdContent span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/
+         {
+            background-color: #c9c9c9;
+            color: #000;
+            padding: 5px 5px 5px 5px;
+        }
+        .pager
+        {
+            background-color: #646464;
+            font-family: Arial;
+            color: White;
+            height: 30px;
+            text-align: left;
+        }
+        .mygrdContent td
+        {
+            padding: 5px;
+        }
+        .mygrdContent th
+        {
+            padding: 5px;
+        }
+      </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+<div class="jumbotron text-center" style="background-image: url(/images/logo.jpg);
+ background-repeat:no-repeat; background-position: center;
+    height: 250px; background-size:cover; margin-bottom:0; position: relative; border-radius: 0;">
+  <h1>Community e-Swap</h1>
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    
+     
+
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+
+        </asp:ContentPlaceHolder>
+   
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+ 
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <p>
+        </p>
+    </asp:ContentPlaceHolder>
+ 
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Community e-Swap A.K.A Shannon, Hatim, &amp; Minjung</p>
+</div>
+
+    </form>
+
+</body>
+</html>
